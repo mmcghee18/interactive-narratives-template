@@ -2,6 +2,11 @@
 
 This starter template includes some elements that you can use to get started on your projects.
 
+I'd recommend going through both of these, especially if you haven't coded much before. Please reach out if you have questions!
+
+* [A basic overview of HTML, CSS, and Javascript](https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Your_first_website)
+* [Svelte tutorial](https://svelte.dev/tutorial/svelte/welcome-to-svelte)
+
 ## Get Started 🚦
 * Click the green `Use this template` button above.
 * Choose `Create a new repository`
