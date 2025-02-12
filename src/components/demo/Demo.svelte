@@ -1,45 +1,54 @@
 <script>
-	import DemoLink from "$components/demo/Demo.Link.svelte";
-	import DemoImg from "$components/demo/Demo.Img.svelte";
-	import DemoSvelteElement from "$components/demo/Demo.SvelteElement.svelte";
-	import DemoSvelteComponent from "$components/demo/Demo.SvelteComponent.svelte";
+	import DemoHero from "$components/demo/Demo.Hero.svelte";
 	import DemoScrolly from "$components/demo/Demo.Scrolly.svelte";
-	import DemoMicroCMS from "$components/demo/Demo.MicroCMS.svelte";
-	import DemoSvelte5 from "$components/demo/Demo.Svelte5.svelte";
-	import DemoLoadData from "$components/demo/Demo.LoadData.svelte";
-	let value = $state(0);
-
-	function onRandom(v) {
-		console.log(v);
-	}
+	import DemoImages from "$components/demo/Demo.Images.svelte";
+	import DemoVideo from "$components/demo/Demo.Video.svelte";
 </script>
 
 <div id="demo">
-	<h1>Demo</h1>
-	<DemoSvelte5 bind:value random={onRandom} />
-	<DemoLink />
-	<DemoImg />
-	<DemoSvelteElement />
-	<DemoSvelteComponent />
-	<DemoMicroCMS />
-	<DemoLoadData />
-	<DemoScrolly />
+	<DemoHero />
+
+	<div class="text">
+		<p>Here are some examples of paragraphs.</p>
+
+		<p>
+			You should wrap your text in a container with a maximum height and the
+			margin set to "0 auto". That way, it's centered on the screen and looks
+			like a nice column.
+		</p>
+
+		<p>
+			Here's a new paragraph. These p tags automatically have some space in
+			between them. You can make some of your text <strong
+				>bold, like this</strong
+			>. Or italics, <i>like this</i>. Maybe you want to include a link to an
+			external source, you could do that
+			<a href="https://www.google.com/maps/">like this</a>.
+		</p>
+
+		<section>
+			<DemoImages />
+		</section>
+
+		<section>
+			<DemoVideo />
+		</section>
+
+		<section>
+			<DemoScrolly />
+		</section>
+	</div>
 </div>
 
 <style>
-	#demo {
+	.text {
 		max-width: 40rem;
 		padding: 16px;
 		margin: 0 auto;
 	}
 
-	:global(#demo section) {
+	section {
 		margin: 32px auto;
 		padding-top: 32px;
-	}
-
-	:global(#demo h2 span) {
-		background: var(--color-mark);
-		padding: 0 8px;
 	}
 </style>
