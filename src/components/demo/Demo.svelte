@@ -5,10 +5,7 @@
 	import DemoVideo from "$components/demo/Demo.Video.svelte";
 
 	/*
-	This is a demonstration of all the helper components.
-	This is simlar to what your Index.svelte might look like.
-	You can import helper components, create your own components and import those, or
-	just write your own HTML and CSS here.
+		This is a demonstration of all the helper components.
 	*/
 </script>
 

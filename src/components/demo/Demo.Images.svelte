@@ -1,37 +1,41 @@
 <script>
 	import Image from "$components/helpers/Image.svelte";
+
+	/*
+		The Image component creates an image with an optional caption.
+		- src: The source of the image file.
+		- alt: The alt text for the image.
+		- caption: The caption for the image.
+		
+		The image will take on the width and height of its container. To make the image smaller or larger,
+		wrap it in a container of the size you want.
+	*/
 </script>
 
-<section>
+<Image
+	src="assets/demo/test.jpg"
+	alt="A lake and some clouds"
+	caption="This is a caption"
+/>
+
+<div class="small">
 	<Image
 		src="assets/demo/test.jpg"
 		alt="A lake and some clouds"
-		caption="Look at this beautiful lake!"
+		caption="The image will fill the width and height of its container"
 	/>
-</section>
+</div>
 
-<section>
-	<div class="small">
-		<Image
-			src="assets/demo/test.jpg"
-			alt="A lake and some clouds"
-			caption="The image will fill the width and height of its container"
-		/>
-	</div>
-</section>
-
-<section>
-	<div class="grid">
-		{#each [1, 2, 3, 4] as i}
-			<Image src="assets/demo/test.jpg" alt="A lake and some clouds" />
-		{/each}
-	</div>
-</section>
+<div class="grid">
+	{#each [1, 2, 3, 4] as i}
+		<Image src="assets/demo/test.jpg" alt="A lake and some clouds" />
+	{/each}
+</div>
 
 <style>
 	.small {
 		width: 300px;
-		margin: 0 auto;
+		margin: 36px auto;
 	}
 
 	.grid {

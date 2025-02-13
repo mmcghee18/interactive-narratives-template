@@ -1,6 +1,14 @@
 <script>
 	import Scrolly from "$components/helpers/Scrolly.svelte";
 
+	/*
+		Scrolly is a component that allows you to create a scrollytelling effect.
+		- value: Takes on the value of the current scroll step that's most in view.
+
+		When using Scrolly, create a container with the class "sticky" and the CSS in the example below.
+		That will create a sticky container that will stay in place while the steps scroll over it.
+	*/
+
 	let value = $state();
 
 	const explanation = [
