@@ -15,7 +15,7 @@
 	hed="This is a placeholder headline"
 	dek="Welcome to this demo"
 	byline="By This Person and That Person"
-	src="assets/demo/test.jpg"
+	src="/demo/assets/test.jpg"
 	alt="A lake and some clouds"
 />
 
@@ -24,6 +24,6 @@
 	hed="This is a placeholder headline"
 	dek="Welcome to this demo"
 	byline="By This Person and That Person"
-	src="assets/demo/test.mp4"
+	src="demo/assets/test.mp4"
 	alt="Flourescent jellyfish moving around"
 /> -->
